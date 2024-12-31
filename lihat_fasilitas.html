@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>The Hotel</title>
+</head>
+<style>
+    .card-img-top {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+</style>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-light py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <img src="image/logo.jpeg" alt="logo" class="img-fluid" style="height: 100px;">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="lihat_kamar.html">Kamar</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="lihat_fasilitas.html">Fasilitas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="form_pemesanan.html">Pesan Sekarang</a></li>
+                        </ul>
+                        <!-- Link Admin -->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="login.html">Admin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+        <h3 class="text-center mb-4">Fasilitas Hotel Kami :</h3>
+
+            <!-- Daftar Fasilitas -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Fasilitas 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="image/kolam-renang.jpg" class="card-img-top" alt="Kolam Renang">
+                <div class="card-body">
+                    <h5 class="card-title">Kolam Renang</h5>
+                    <p class="card-text">Kolam renang outdoor yang besar dan nyaman untuk bersantai.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fasilitas 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="image/gym.jpeg" class="card-img-top" alt="Pusat Kebugaran">
+                <div class="card-body">
+                    <h5 class="card-title">Pusat Kebugaran</h5>
+                    <p class="card-text">Gym dengan peralatan modern dan area cardio.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fasilitas 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="image/restoran.jpeg" class="card-img-top" alt="Restoran">
+                <div class="card-body">
+                    <h5 class="card-title">Restoran</h5>
+                    <p class="card-text">Restoran dengan berbagai pilihan menu lokal dan internasional.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fasilitas 4 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="image/spa.jpeg" class="card-img-top" alt="Spa">
+                <div class="card-body">
+                    <h5 class="card-title">Spa</h5>
+                    <p class="card-text">Nikmati perawatan relaksasi dengan layanan spa terbaik kami.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fasilitas 5 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="image/playground.jpeg" class="card-img-top" alt="Playground">
+                <div class="card-body">
+                    <h5 class="card-title">Playground</h5>
+                    <p class="card-text">Area bermain anak dengan fasilitas yang aman dan menyenangkan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-warning text-center py-3">
+        <p>Developed by Ina Khaerun'nisa &copy; 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

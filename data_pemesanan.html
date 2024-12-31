@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>The Hotel</title>
+</head>
+<style>
+    .btn-edit {
+        background-color: #ffc107;
+        color: #000;
+        border: none;
+    }
+
+    .btn-edit:hover {
+        background-color: #e0a800;
+        color: #000;
+    }
+
+    .btn-delete {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+    }
+
+    .btn-delete:hover {
+        background-color: #c82333;
+        color: #fff;
+    }
+</style>
+<body>
+        <!-- Header -->
+        <header class="bg-dark text-light py-3">
+            <div class="container d-flex align-items-center justify-content-between">
+                <img src="image/logo.jpeg" alt="logo" class="img-fluid" style="height: 100px;">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="admin.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="kamar.html">Kamar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="fasilitas.html">Fasilitas</a></li>
+                                <li class="nav-item"><a class="nav-link" href="data_pemesanan.html">Data Pemesanan</a></li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="login.html">Admin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <!-- Tabel Data Pemesanan -->
+            <div class="table-container">
+                <h3 class="mb-4" style="margin-top: 30px;">Data Pemesanan Hotel</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Pemesan</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Nomor Identitas</th>
+                            <th>Tipe Kamar</th>
+                            <th>Durasi Menginap</th>
+                            <th>Tanggal Pesan</th>
+                            <th>Termasuk Breakfast</th>
+                            <th>Diskon</th>
+                            <th>Total Bayar</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderTableBody">
+                        <!-- Data Pemesanan Contoh -->
+                        <tr>
+                            <td>1</td>
+                            <td>Ina Khaerun'nisa</td>
+                            <td>Perempuan</td>
+                            <td>1234567890123456</td>
+                            <td>Standar</td>
+                            <td>3 hari</td>
+                            <td>31-12-2024</td>
+                            <td>Ya</td>
+                            <td>0%</td>
+                            <td>Rp 1.740.000</td>
+                            <td>
+                                <button class="btn btn-edit btn-sm" onclick="editOrder(1)">Edit</button>
+                                <button class="btn btn-delete btn-sm" onclick="deleteOrder(1)">Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Rudy Budiman</td>
+                            <td>Laki-Laki</td>
+                            <td>9876543210987654</td>
+                            <td>Deluxe</td>
+                            <td>5 hari</td>
+                            <td>01-01-2025</td>                            
+                            <td>Tidak</td>
+                            <td>10%</td>
+                            <td>Rp 4.500.000</td>
+                            <td>
+                                <button class="btn btn-edit btn-sm" onclick="editOrder(2)">Edit</button>
+                                <button class="btn btn-delete btn-sm" onclick="deleteOrder(2)">Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Johnson</td>
+                            <td>Laki-Laki</td>
+                            <td>2345678901234567</td>
+                            <td>Suite</td>
+                            <td>7 hari</td>
+                            <td>01-01-2025</td>
+                            <td>Ya</td>
+                            <td>10%</td>
+                            <td>Rp 13.160.000</td>
+                            <td>
+                                <button class="btn btn-edit btn-sm" onclick="editOrder(3)">Edit</button>
+                                <button class="btn btn-delete btn-sm" onclick="deleteOrder(3)">Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            // Fungsi untuk menghapus pemesanan
+            function deleteOrder(orderNo) {
+                if (confirm('Apakah Anda yakin ingin menghapus pemesanan ini?')) {
+                    $(`#orderTableBody tr:nth-child(${orderNo})`).remove();
+                }
+            };
+
+            // Fungsi untuk mengedit pemesanan
+            function editOrder(orderNo) {
+                alert('Fungsi edit belum diimplementasikan.');
+            };
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

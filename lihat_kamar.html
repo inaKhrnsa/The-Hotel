@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>The Hotel</title>
+</head>
+<style>
+    .card-img-top {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+</style>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-light py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <img src="image/logo.jpeg" alt="logo" class="img-fluid" style="height: 100px;">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="kamar.html">Kamar</a></li>
+                            <li class="nav-item"><a class="nav-link" href="lihat_fasilitas.html">Fasilitas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="form_pemesanan.html">Pesan Sekarang</a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="login.html">Admin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+        <h3 class="text-center mb-4">Jenis Kamar Hotel Kami :</h3>
+        <div class="row">
+            <!-- Card Kamar 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/room1.jpeg" class="card-img-top" alt="Kamar Standard">
+                    <div class="card-body">
+                        <h5 class="card-title">Kamar Standard</h5>
+                        <p class="card-text">Kamar nyaman untuk 2 orang dengan fasilitas lengkap.</p>
+                        <p class="text-success fw-bold">Rp 500,000 / malam</p>
+                        <a href="form_pemesanan.html" class="btn btn-primary">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Kamar 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/room2.jpeg" class="card-img-top" alt="Kamar Deluxe">
+                    <div class="card-body">
+                        <h5 class="card-title">Kamar Deluxe</h5>
+                        <p class="card-text">Kamar luas dengan fasilitas premium untuk keluarga.</p>
+                        <p class="text-success fw-bold">Rp 1,000,000 / malam</p>
+                        <a href="form_pemesanan.html" class="btn btn-primary">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Kamar 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/room3.jpeg" class="card-img-top" alt="Kamar Suite">
+                    <div class="card-body">
+                        <h5 class="card-title">Kamar Suite</h5>
+                        <p class="card-text">Nikmati kemewahan dan kenyamanan dengan fasilitas eksklusif.</p>
+                        <p class="text-success fw-bold">Rp 2,000,000 / malam</p>
+                        <a href="form_pemesanan.html" class="btn btn-primary">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-warning text-center py-3">
+        <p>Developed by Ina Khaerun'nisa &copy; 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
